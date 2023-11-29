@@ -5,7 +5,7 @@ import (
 	"encoding/csv"
 	"encoding/xml"
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/wailsio/wails/v2"
+	"github.com/wailsapp/wails/v2"
 	"strings"
 )
 

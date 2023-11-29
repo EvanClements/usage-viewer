@@ -2,20 +2,19 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"database/sql"
 	"encoding/csv"
 	"encoding/xml"
-	_ "github.com/mattn/go-sqlite3"
-	"github.com/wailsio/wails/v2"
 	"strings"
+	_ "github.com/mattn/go-sqlite3"
+	"github.com/wailsapp/wails/v2"
 )
 
 // App struct
 type App struct {
 	ctx context.Context
 	// runtime *wails.Runtime
-	db      *sql.DB
+	db *sql.DB
 }
 
 // NewApp creates a new App application struct
@@ -49,14 +48,12 @@ func (a *App) startup(ctx context.Context) {
 		return err
 	}
 
-
 }
 
 // Greet returns a greeting for the given name
 // func (a *App) Greet(name string) string {
-	// return fmt.Sprintf("Hello %s, It's show time!", name)
+// return fmt.Sprintf("Hello %s, It's show time!", name)
 // }
-
 
 // YourDataStruct represents the structure of your data
 type YourDataStruct struct {
